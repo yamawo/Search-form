@@ -19,7 +19,7 @@ $(function(){
         let inputs = input.split(" ");
         let newInputs = inputs.map(editElement);
         let reg = RegExp(newInputs.join("|"));  //正規表現をするために必要な処理 ^は前方一致させるため
-
+  
         $(".list").remove(); //前回の検索結果消去　.listは6行目にてwordに追加済み
 
         $.each(fruits, function(i, fruit){
